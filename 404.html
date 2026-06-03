@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      var path = window.location.pathname.replace('/Lord-Fruit', '');
+      var search = window.location.search;
+      var hash = window.location.hash;
+      var url = '?p=' + encodeURIComponent(path + search) + '#' + encodeURIComponent(hash);
+      window.location.replace('/Lord-Fruit/' + url);
+    </script>
+  </head>
+  <body></body>
+</html>
